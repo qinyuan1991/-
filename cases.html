@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>案例展示 - 山东沁园文化传播有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .cases-section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cases-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.5rem 1.5rem;
+            border: none;
+            background-color: #f0f0f0;
+            color: #333;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background-color: #1a73e8;
+            color: #fff;
+        }
+
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .case-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .case-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .case-content {
+            padding: 1.5rem;
+        }
+
+        .case-content h3 {
+            color: #1a73e8;
+            margin-bottom: 0.5rem;
+        }
+
+        .case-content p {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .case-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .case-tag {
+            padding: 0.2rem 0.8rem;
+            background-color: #f0f0f0;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        @media screen and (max-width: 992px) {
+            .cases-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>山东沁园文化传播</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="services.html">服务项目</a></li>
+                <li><a href="cases.html" class="active">案例展示</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cases-section">
+            <div class="cases-header">
+                <h1>案例展示</h1>
+                <p>精选优质项目案例，展现专业服务实力</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active">全部</button>
+                <button class="filter-btn">庆典活动</button>
+                <button class="filter-btn">舞美搭建</button>
+                <button class="filter-btn">旅游团建</button>
+                <button class="filter-btn">品牌营销</button>
+            </div>
+
+            <div class="cases-grid">
+                <div class="case-card">
+                    <img src="images/case1.jpg" alt="某企业周年庆典" class="case-image">
+                    <div class="case-content">
+                        <h3>某企业20周年庆典</h3>
+                        <p>为某知名企业策划并执行20周年庆典活动，包括舞台搭建、灯光音响、节目编排等全方位服务。</p>
+                        <div class="case-tags">
+                            <span class="case-tag">庆典活动</span>
+                            <span class="case-tag">舞美搭建</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <img src="images/case2.jpg" alt="产品发布会" class="case-image">
+                    <div class="case-content">
+                        <h3>新品发布会活动策划</h3>
+                        <p>为某科技公司策划新产品发布会，打造沉浸式体验场景，获得广泛好评。</p>
+                        <div class="case-tags">
+                            <span class="case-tag">品牌营销</span>
+                            <span class="case-tag">舞美搭建</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <img src="images/case3.jpg" alt="团建活动" class="case-image">
+                    <div class="case-content">
+                        <h3>企业团建拓展活动</h3>
+                        <p>为某集团公司组织为期3天的团建活动，通过趣味运动会和文化之旅提升团队凝聚力。</p>
+                        <div class="case-tags">
+                            <span class="case-tag">旅游团建</span>
+                            <span class="case-tag">活动策划</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <img src="images/case4.jpg" alt="开业庆典" class="case-image">
+                    <div class="case-content">
+                        <h3>商场开业庆典活动</h3>
+                        <p>为某大型商场开业策划系列庆典活动，整合线上线下资源，创造话题热度。</p>
+                        <div class="case-tags">
+                            <span class="case-tag">庆典活动</span>
+                            <span class="case-tag">品牌营销</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <img src="images/case5.jpg" alt="音乐节舞台" class="case-image">
+                    <div class="case-content">
+                        <h3>城市音乐节舞台搭建</h3>
+                        <p>负责某城市音乐节主舞台设计与搭建，打造震撼视听体验。</p>
+                        <div class="case-tags">
+                            <span class="case-tag">舞美搭建</span>
+                            <span class="case-tag">活动执行</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <img src="images/case6.jpg" alt="企业年会" class="case-image">
+                    <div class="case-content">
+                        <h3>企业年会策划执行</h3>
+                        <p>为某上市公司策划年度盛典，融合企业文化，展现品牌魅力。</p>
+                        <div class="case-tags">
+                            <span class="case-tag">庆典活动</span>
+                            <span class="case-tag">舞美搭建</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>山东沁园文化传播有限公司</h3>
+                <p>专业 | 创新 | 卓越</p>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> 联系电话：0XXX-XXXXXXXX</p>
+                <p><i class="fas fa-envelope"></i> 邮箱：contact@qinyuan.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 地址：山东省XX市XX区XX路XX号</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 山东沁园文化传播有限公司 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // 案例筛选功能
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const caseCards = document.querySelectorAll('.case-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // 移除所有按钮的active类
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // 添加当前按钮的active类
+                btn.classList.add('active');
+
+                const filterValue = btn.textContent;
+
+                caseCards.forEach(card => {
+                    const tags = card.querySelectorAll('.case-tag');
+                    if (filterValue === '全部') {
+                        card.style.display = 'block';
+                    } else {
+                        let hasTag = false;
+                        tags.forEach(tag => {
+                            if (tag.textContent === filterValue) {
+                                hasTag = true;
+                            }
+                        });
+                        card.style.display = hasTag ? 'block' : 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

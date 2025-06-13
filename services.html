@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>服务项目 - 山东沁园文化传播有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .services-section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .services-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 2rem;
+        }
+
+        .service-content h3 {
+            color: #1a73e8;
+            margin-bottom: 1rem;
+        }
+
+        .service-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-features li:before {
+            content: "✓";
+            color: #1a73e8;
+            position: absolute;
+            left: 0;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #1a73e8;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #1557b0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>山东沁园文化传播</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="services.html" class="active">服务项目</a></li>
+                <li><a href="cases.html">案例展示</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-section">
+            <div class="services-header">
+                <h1>服务项目</h1>
+                <p>为您提供专业的文化传播解决方案</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="images/celebration.jpg" alt="庆典服务" class="service-image">
+                    <div class="service-content">
+                        <h3>庆典服务</h3>
+                        <p>专业策划和执行各类庆典活动，为您打造难忘的精彩时刻。</p>
+                        <ul class="service-features">
+                            <li>开业庆典</li>
+                            <li>周年庆典</li>
+                            <li>产品发布会</li>
+                            <li>颁奖典礼</li>
+                            <li>企业年会</li>
+                        </ul>
+                        <a href="contact.html" class="contact-btn">立即咨询</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/stage.jpg" alt="舞美搭建" class="service-image">
+                    <div class="service-content">
+                        <h3>舞美搭建</h3>
+                        <p>专业的舞台设计与搭建服务，打造完美的演出氛围。</p>
+                        <ul class="service-features">
+                            <li>舞台设计</li>
+                            <li>灯光音响</li>
+                            <li>LED显示屏</li>
+                            <li>特效设备</li>
+                            <li>场地布置</li>
+                        </ul>
+                        <a href="contact.html" class="contact-btn">立即咨询</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/teambuilding.jpg" alt="旅游团建" class="service-image">
+                    <div class="service-content">
+                        <h3>旅游团建</h3>
+                        <p>量身定制团建活动方案，增强团队凝聚力。</p>
+                        <ul class="service-features">
+                            <li>户外拓展</li>
+                            <li>文化之旅</li>
+                            <li>主题团建</li>
+                            <li>趣味运动会</li>
+                            <li>团队培训</li>
+                        </ul>
+                        <a href="contact.html" class="contact-btn">立即咨询</a>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/marketing.jpg" alt="品牌营销" class="service-image">
+                    <div class="service-content">
+                        <h3>品牌营销</h3>
+                        <p>全方位的品牌推广和营销策划服务。</p>
+                        <ul class="service-features">
+                            <li>品牌策划</li>
+                            <li>活动推广</li>
+                            <li>新媒体运营</li>
+                            <li>广告设计</li>
+                            <li>营销方案</li>
+                        </ul>
+                        <a href="contact.html" class="contact-btn">立即咨询</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>山东沁园文化传播有限公司</h3>
+                <p>专业 | 创新 | 卓越</p>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> 联系电话：15275908985</p>
+                <p><i class="fas fa-envelope"></i> 邮箱：1102772356.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 地址：山东省淄博市张店区柳泉路29号</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2017 山东沁园文化传播有限公司 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

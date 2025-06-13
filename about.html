@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - 山东沁园文化传播有限公司</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .about-section {
+            padding: 4rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .about-text h2 {
+            color: #1a73e8;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .values {
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-item {
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .value-item i {
+            font-size: 2.5rem;
+            color: #1a73e8;
+            margin-bottom: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>山东沁园文化传播</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html" class="active">关于我们</a></li>
+                <li><a href="services.html">服务项目</a></li>
+                <li><a href="cases.html">案例展示</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="about-header">
+                <h1>关于我们</h1>
+                <p>专业的文化传播服务提供商</p>
+            </div>
+
+            <div class="about-content">
+                <img src="images/about.jpg" alt="公司简介" class="about-image">
+                <div class="about-text">
+                    <h2>山东沁园文化传播有限公司</h2>
+                    <p>山东沁园文化传播有限公司成立于[年份]，是一家专注于文化传播服务的综合性企业。我们致力于为客户提供专业的庆典服务、舞美搭建和旅游团建等全方位解决方案。</p>
+                    <p>多年来，我们始终秉持"专业、创新、卓越"的服务理念，凭借丰富的行业经验和优秀的服务团队，为众多企事业单位提供了优质的文化传播服务。</p>
+                    <p>我们的团队由经验丰富的策划师、设计师和项目管理专家组成，能够为客户量身定制最适合的解决方案，确保每个项目都能完美呈现。</p>
+                </div>
+            </div>
+
+            <div class="values">
+                <h2>我们的价值观</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-star"></i>
+                        <h3>专业服务</h3>
+                        <p>以专业的态度和技能，为客户提供最优质的服务体验。</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>创新思维</h3>
+                        <p>不断创新，追求独特的创意方案，打造与众不同的活动体验。</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3>诚信合作</h3>
+                        <p>诚信为本，与客户建立长期稳定的合作关系。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>山东沁园文化传播有限公司</h3>
+                <p>专业 | 创新 | 卓越</p>
+            </div>
+            <div class="footer-contact">
+                <p><i class="fas fa-phone"></i> 联系电话：15275908985</p>
+                <p><i class="fas fa-envelope"></i> 邮箱：1102772356@qq.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 地址：山东省淄博市张店区柳泉路29号</p>号
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2017 山东沁园文化传播有限公司 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
